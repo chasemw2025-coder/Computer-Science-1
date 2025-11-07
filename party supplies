@@ -1,0 +1,19 @@
+# Party Supplies Calculator
+
+# List of items for the party
+cake = int(input("Enter how many cakes you need: "))
+silverware = int(input("Enter how many sets of silverware you need: "))
+candles = int(input("Enter how many candles you need: "))
+pizza = int(input("Enter how many pizzas you need: "))
+
+# Calculate total number of items (sum of all inputs)
+total_items = cake + silverware + candles + pizza
+
+# Output results
+print("\n--- Party Supplies Needed ---")
+print("Cakes:", cake)
+print("Silverware sets:", silverware)
+print("Candles:", candles)
+print("Pizzas:", pizza)
+print("-----------------------------")
+print("Total number of items needed:", total_items)
