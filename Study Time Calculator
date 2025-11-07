@@ -1,0 +1,23 @@
+# Study Time Calculator
+
+# Input study times for each subject
+math_time = float(input("Enter hours needed for Math: "))
+reading_time = float(input("Enter hours needed for Reading: "))
+cs_time = float(input("Enter hours needed for Computer Science: "))
+
+# Calculate total time
+total_time = math_time + reading_time + cs_time
+
+# Output the results
+print("\nStudy Time Breakdown:")
+print(f"Math: {math_time} hours")
+print(f"Reading: {reading_time} hours")
+print(f"Computer Science: {cs_time} hours")
+
+# Output total time to complete all study chores
+print(f"\nTotal study time needed: {total_time} hours")
+
+# Optional: estimate time per day if you want to finish in X days
+days = int(input("\nEnter number of days to finish studying: "))
+time_per_day = total_time / days
+print(f"You need to study {time_per_day:.2f} hours per day.")
