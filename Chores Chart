@@ -1,0 +1,23 @@
+# Chores Chart Calculator
+
+# Inputs
+people = int(input("Enter the number of people: "))
+dishwasher_time = int(input("Enter time (in minutes) to do dishwasher: "))
+vacuum_time = int(input("Enter time (in minutes) to vacuum: "))
+cleaning_time = int(input("Enter time (in minutes) for cleaning: "))
+trash_time = int(input("Enter time (in minutes) to take out trash: "))
+
+# Calculation
+total_time = dishwasher_time + vacuum_time + cleaning_time + trash_time
+time_per_person = total_time / people
+
+# Output
+print("\n--- Chores Chart ---")
+print("Number of People:", people)
+print("Dishwasher Time:", dishwasher_time, "minutes")
+print("Vacuum Time:", vacuum_time, "minutes")
+print("Cleaning Time:", cleaning_time, "minutes")
+print("Trash Time:", trash_time, "minutes")
+print("--------------------")
+print("Total Time Needed:", total_time, "minutes")
+print("Time per Person:", round(time_per_person, 2), "minutes")
